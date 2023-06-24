@@ -1,0 +1,18 @@
+{
+  "name": "@dst-hpo/d365_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "Hansjoerg Posch",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/msal-node": "^1.17.3",
+    "axios": "^1.4.0"
+  },
+  "publishConfig": {
+    "@dst-hpo:registry": "https://npm.pkg.github.com"
+  }
+}
