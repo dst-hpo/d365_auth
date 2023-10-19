@@ -69,7 +69,12 @@ var auth = {
     };
 
     let call = await axios(config);
-    let data = call.data.value;
+    let data = call.data;
+
+    // return the sub property value if it exists (for some queries this is the root)
+    if (data.value) {
+      data = data.value;
+    }
 
     return data;
 
